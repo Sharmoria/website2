@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms & Conditions - SHARMORIA</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* --- Terms Page Specific Styles --- */
+    .terms-hero {
+      background: var(--gradient-hero);
+      color: white;
+      padding: 6rem 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .terms-hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: 0;
+    }
+
+    .terms-hero .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .terms-hero .hero-title {
+      font-size: 3rem;
+      font-weight: 700;
+      font-family: var(--font-heading);
+      margin-bottom: 1rem;
+    }
+
+    .terms-hero .hero-subtitle {
+      font-size: 1.25rem;
+      font-style: italic;
+      opacity: 0.9;
+    }
+
+    .terms-main {
+      padding: 5rem 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    .terms-main p {
+      margin-bottom: 1.5rem;
+      color: var(--text-muted);
+    }
+
+    .terms-main h2 {
+      font-size: 2rem;
+      font-family: var(--font-heading);
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      color: var(--text-color);
+    }
+
+    .terms-main ul {
+      list-style-type: disc;
+      margin-left: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--text-muted);
+    }
+
+    .terms-main a {
+      color: var(--primary-color);
+      text-decoration: underline;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .terms-hero .hero-title {
+        font-size: 2.5rem;
+      }
+      .terms-hero .hero-subtitle {
+        font-size: 1.1rem;
+      }
+      .terms-main {
+        padding: 3rem 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .terms-hero .hero-title {
+        font-size: 2rem;
+      }
+      .terms-hero .hero-subtitle {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header id="header"></header>
+
+  <!-- Hero Section -->
+  <section class="terms-hero">
+    <div class="container hero-content">
+      <h1 class="hero-title">Terms & Conditions</h1>
+      <p class="hero-subtitle">Booking and service guidelines for a seamless experience</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="terms-main">
+    <p>By booking with SHARMORIA, you agree to our service terms. Cancellations within 24 hours may be charged.</p>
+
+    <h2>1. Booking & Cancellation Policy</h2>
+    <p>All bookings must be made at least 24 hours in advance. Cancellations or rescheduling requests made less than 24 hours before the appointment may be subject to a cancellation fee of up to 50% of the service price.</p>
+
+    <h2>2. Service Requirements</h2>
+    <ul>
+      <li>Clients must provide a quiet, private space for the treatment</li>
+      <li>A clean, flat surface area of at least 2m x 2m is required</li>
+      <li>Adequate lighting and room temperature control</li>
+      <li>Access to water and bathroom facilities</li>
+      <li>Parking or drop-off area for our therapist</li>
+    </ul>
+
+    <h2>3. Payment Terms</h2>
+    <p>Payment is due at the time of service. We currently accept cash payments. Full payment is required before the therapist leaves your premises.</p>
+
+    <h2>4. Travel Fees</h2>
+    <p>Services within 20km of Johannesburg or Pretoria city centers are included in the service price. Additional travel beyond 20km will be charged at R2 per kilometer.</p>
+
+    <h2>5. Health & Safety</h2>
+    <p>Clients must disclose any health conditions, allergies, or injuries that may affect the treatment. SHARMORIA reserves the right to refuse service if we believe it may be unsafe or inappropriate.</p>
+
+    <h2>6. Liability</h2>
+    <p>While we take every precaution to ensure your safety and satisfaction, SHARMORIA is not liable for any adverse reactions, injuries, or damages that may occur during or after treatment, unless caused by negligence on our part.</p>
+
+    <h2>7. Code of Conduct</h2>
+    <p>We expect all clients to treat our therapists with respect and professionalism. Any inappropriate behavior will result in immediate termination of service without refund.</p>
+
+    <h2>8. Contact Us</h2>
+    <p>
+      <strong>SHARMORIA Mobile Spa Services</strong><br>
+      Phone: <a href="tel:+27612042804">+27 61 204 2804</a><br>
+      Service Area: Johannesburg & Pretoria
+    </p>
+
+    <p>By booking our services, you acknowledge that you have read and understood these Terms & Conditions.</p>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer"></footer>
+
+  <script src="js/components.js"></script>
+</body>
+</html>

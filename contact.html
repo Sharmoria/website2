@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SHARMORIA</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header id="header"></header>
+
+    <main>
+        <div class="container">
+            <div class="page-header text-center">
+                <h1>Get in Touch</h1>
+                <p>Questions? Group bookings? Corporate events? Send us a message.</p>
+            </div>
+
+            <div class="contact-layout">
+                <div class="contact-form-container">
+                    <div class="card">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" placeholder="Your name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" placeholder="you@example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" placeholder="+27 61 204 2804">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" rows="5" placeholder="Your message..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="contact-info-container">
+                    <div class="card">
+                        <h2>Contact Information</h2>
+
+                        <a href="tel:+27612042804" class="contact-item">
+                            <div class="contact-icon">
+                                <img src="images/icons/phone.svg" alt="Phone icon"></div>
+                            
+                            <div>
+                                <h3>Phone</h3>
+                                <p>+27 61 204 2804</p>
+                            </div>
+                        </a>
+
+                        <a href="https://wa.me/27612042804" target="_blank" class="contact-item">
+                            <div class="contact-icon">
+                            <img src="images/icons/whatsapp.svg" alt="WhatsApp icon">
+                            </div>
+                            <div>
+                                <h3>WhatsApp</h3>
+                                <p>Chat with us</p>
+                            </div>
+                        </a>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <img src="images/icons/map-pin.svg" alt="Location icon">
+                            </div>
+                            <div>
+                                <h3>Service Area</h3>
+                                <p>Johannesburg & Pretoria</p>
+                                <small>Travel charges apply if more than 5km from city center.</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card operating-hours">
+                        <h3>Operating Hours</h3>
+                        <p>Every day: 9:00 AM - 6:00 PM</p>
+                        <small>Book your appointment during our operating hours.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="js/data.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

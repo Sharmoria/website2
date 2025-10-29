@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment - SHARMORIA</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header id="header"></header>
+
+    <main class="booking-page">
+        <div class="container">
+            <div class="page-header text-center">
+                <h1>Book an Appointment</h1>
+                <p>Select your services and preferred appointment time</p>
+            </div>
+
+            <div class="booking-layout">
+                <div class="booking-services">
+                    <div class="card">
+                        <h2>Select Services</h2>
+
+                        <div class="alert alert-info">
+                            <strong>Minimum Booking: R500</strong>
+                            <p>For clients located more than 5km from the city center of Pretoria or Johannesburg, we require a minimum booking of R500. Feel free to combine multiple services to meet this amount.</p>
+                        </div>
+
+                        <div class="service-category">
+                            <h3>Package Bundles</h3>
+                            <div id="booking-packages" class="service-list"></div>
+                        </div>
+
+                        <div class="service-category">
+                            <h3>Massage Services</h3>
+                            <div id="booking-massages" class="service-list"></div>
+                        </div>
+
+                        <div class="service-category">
+                            <h3>Waxing Packages</h3>
+                            <div id="booking-waxing" class="service-list"></div>
+                        </div>
+
+                        <div class="service-category">
+                            <h3>Individual Waxing Services</h3>
+                            <div id="booking-waxing-single" class="service-list service-list-compact"></div>
+                        </div>
+
+                        <div class="service-category">
+                            <h3>Facial & Add-ons</h3>
+                            <div id="booking-facial" class="service-list"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="booking-sidebar">
+                    <div class="card booking-summary">
+                        <h2>Booking Summary</h2>
+                        <div id="selected-services">
+                            <p class="empty-state">No services selected yet</p>
+                        </div>
+                        <div class="summary-total">
+                            <div class="total-row">
+                                <strong>Total:</strong>
+                                <strong class="total-amount" id="total-amount">R0</strong>
+                            </div>
+                            <div id="minimum-notice"></div>
+                        </div>
+                    </div>
+
+                    <div class="card booking-form" id="booking-form-card" style="display: none;">
+                        <h3>Your Details</h3>
+                        <form id="booking-form">
+                            <div class="form-group">
+                                <label for="date">Date *</label>
+                                <input type="date" id="date" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="time">Time *</label>
+                                <input type="time" id="time" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" placeholder="Your full name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" placeholder="you@example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone *</label>
+                                <input type="tel" id="phone" placeholder="+27 61 204 2804" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="address">Service Address *</label>
+                                <input type="text" id="address" placeholder="Street, Suburb, City" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="idDocument">ID/Passport Document *</label>
+                                <input type="file" id="idDocument" accept="image/*,.pdf" required>
+                                <small>Please upload a clear photo or scan of your ID or passport</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Payment Method *</label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="paymentMethod" value="cash" checked>
+                                        <span>Cash on Arrival</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="paymentMethod" value="card">
+                                        <span>Card on Arrival</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Confirm Booking</button>
+                            <p class="form-note">We'll confirm your booking within 24 hours</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="js/data.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+</html>
